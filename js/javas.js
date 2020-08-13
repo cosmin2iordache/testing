@@ -1,17 +1,47 @@
 //DAY 6 Higher Order Function
-function doubleMe(x) {
-      return x*2
+
+// let name = "cosmin"
+
+function repeatName(name) {
+      return function (x) {
+      let repeat = 0      
+      while (repeat < x) {
+            document.write(name + "<br>")
+            repeat++
+            }
+      }
 }
 
-document.write(doubleMe(100))
+let max = repeatName("Max")
+document.write(max(3))
+
+// console.log(max(5))
 
 
+// function createMultiplier(multiplier) {
+//       return function (x) {
+//             return x * multiplier
+//       }
+// }
+
+// let doubleMe = createMultiplier(2) 
+// let tripleMe = createMultiplier(3)
 
 
+// document.write(doubleMe(15))
+// document.write(tripleMe(7))
 
+// let myColors = ["red","green","orange"]
 
+// myColors.forEach(say);
 
+// function say(color) {
+//       document.write("the color " + color + " is nice. <br>")
+// }
 
+// myColors.forEach(function(x) {
+//       console.log("dasdasdas" + x)
+// })
 
 
 
