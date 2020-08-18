@@ -1,3 +1,35 @@
+// let name = "Box"
+
+// function sayName() {
+//      name = "cosmin"
+// }
+
+// sayName()
+// console.log("name is " + name)
+
+
+
+
+// let cosmin = {
+//      firstName: "cosmin",
+//      lastName: "cox",
+//      breathe2() {
+//           console.log(this.firstName + " " + this.lastName)
+//           function one(){console.log(this)}
+//           one()
+//      }
+// }
+
+// function breathe() {
+//      console.log(this.firstName + " " + this.lastName)
+// }
+
+// breathe.call(cosmin)
+// cosmin.breathe2()
+
+
+
+
 // class Person {
 //       constructor(x) {
 //             this.name = x
@@ -21,7 +53,8 @@
 
 
 
-// map and filer => arrows
+
+// map and filer with arrow
 // let animals = [
 //       {name: "MAX", age: 4, color: "red"},
 //       {name: "PAX", age: 5, color: "red"},
@@ -30,54 +63,26 @@
 // ]
 
 // console.log(animals.push({name: "ZIX", age: 4, color: "yellow"}))
-// // console.log(animals)
 
-// let names = animals.map(x => x.name)
+// function onlyNames(x) {
+//       return x.name
+// }
 
-// let age = animals.filter(x=>x.age >4)
+// function onlyBig(x) {
+//       return x.age >4
+// }
 
-// let color = animals.filter(x => x.color == "red")
+// function onlyRed(x) {
+//       return x.color == "red"
+// }
 
 
 // let finalFunction = animals.filter(onlyBig).filter(onlyRed).map(onlyNames)
+// let finalFunction2 = animals.filter(x => x.age>4).filter(onlyRed).map(onlyNames)
 
 
 // console.log(finalFunction)
-
-
-
-
-
-
-// map and filer
-let animals = [
-      {name: "MAX", age: 4, color: "red"},
-      {name: "PAX", age: 5, color: "red"},
-      {name: "FOX", age: 6, color: "blue"},
-      {name: "DOX", age: 7, color: "yellow"}
-]
-
-console.log(animals.push({name: "ZIX", age: 4, color: "yellow"}))
-
-function onlyNames(x) {
-      return x.name
-}
-
-function onlyBig(x) {
-      return x.age >4
-}
-
-function onlyRed(x) {
-      return x.color == "red"
-}
-
-
-let finalFunction = animals.filter(onlyBig).filter(onlyRed).map(onlyNames)
-let finalFunction2 = animals.filter(x => x.age>4).filter(onlyRed).map(onlyNames)
-
-
-console.log(finalFunction)
-console.log(finalFunction2)
+// console.log(finalFunction2)
 
 
 
